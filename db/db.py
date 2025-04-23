@@ -31,7 +31,7 @@ def add_todo(task): # add a task to the todos table
     conn.commit()
     conn.close()
 
-def get_todos(): # get all tasks from the todos table
+def show_todo(): # get all tasks from the todos table
     """Get all tasks from the todos table."""
     
     conn = sqlite3.connect('assistant.db')
@@ -61,7 +61,7 @@ def add_reminder(note, remind_at): # add a reminder to the reminders table
     conn.commit()
     conn.close()
 
-def get_reminders(): # get all reminders from the reminders table
+def show_reminders(): # get all reminders from the reminders table
     """Get all reminders from the reminders table."""
     
     conn = sqlite3.connect('assistant.db')
